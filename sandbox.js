@@ -1,68 +1,90 @@
-// Loops
 
-// for loop
+//Functions
 
-for(let i = 0; i < 5; i++){
-    console.log(i);
+function greet(){
+    console.log('Hello there!');
+}
+//greet();
+//greet();
+//greet();
+
+
+const speak = function(name = 'Maris', surname = "Karpov"){
+    console.log(`Hello ${name} ${surname}`);
+};
+speak();
+
+const calculateArean = function(radius){
+    var area = 3.14 * radius**2;
+    return area;
 }
 
-const names = ['Alex', 'Deniss', 'Max', 'Ivan'];
 
-for(let i = 0; i < names.length; i++){
-    console.log(names[i]);
-}
 
-// while loop
+const myCircle = calculateArean(5);
+console.log(myCircle);
 
-let j = 0;
+const arrowCalculateArea = radius => 3.14 * radius**2;
 
-while(j < 5){
-    console.log(`Current number: ${j}`);
-    j++;
-}
+    console.log(`Area is ${arrowCalculateArea(10)}`);
 
-//if statement
 
-const age = 18;
 
-if (age > 21){
-    console.log('Welcome to our page');
-}
-
-const workers = ['Deniss', 'Alex', 'Ina', 'Maria'];
-
-if (workers.length > 3){
-    console.log('That is big company');
-}
-
-// else if 
-
-const password = 'pssword123121';
-
-if(password.length > 12 && password.includes('@')){
-    console.log('password is strong');
-} else if(password.length > 8 || password.includes('@')){
-    console.log('Password is too short or not strong');
-} else if(!password.length == 10){
-    console.log('We do not like your password');
-} else {
-    console.log('Password is weak');
-}
-
-console.log(!true);
-console.log(!false);
-
-//let ages = [9, 18, 35, 15]
-//Loops through all elemnt (ages) and
-// print if this person can drink alcohol
-
-let ages = [9, 18, 35, 15];
-let time = 21;
-//If time > 22 - age doesn't matter, no alco
-for (let i = 0; i < ages.length; i++){
-    if(ages[i] >= 18){
-        console.log(`You can drink alco, you are ${ages[i]}`);
-    } else {
-        console.log('You too young for alco');
+const bill = function(product, tax){
+    var total = 0
+    for (var i = 0; i< product.length; i++){
+        total += product[i] + product[i] * tax;
     }
+    return total;
 }
+
+
+//forEach
+
+var people = ['Max', 'Deniss', 'Alex', 'Ivan']
+//for (var i=0; i < people.length; i++);{
+ //   console.log(people[i]);
+//}
+
+people.forEach(person => {
+    console.log(person);
+});
+
+
+//Task
+// function - sortArea(array)
+// Ex. var arrrey = [89, 46, 0 35]
+// sortArrrey(array)
+//[0, 35, 46, 89]
+
+
+
+
+// function sortArea(array){
+//     //var result = [89, 46, 0, 35];
+    
+    
+//     for(i=0; i<array.length; i++){
+    
+//     for(j=0; j<array.length; j++){
+//             if(array[i]>array[j+1]){
+    
+//             }
+//         }
+    
+//      }
+    
+//      console.log(sortArea);
+//     }
+    
+
+
+
+
+    var numArray = [89, 46, 0, 35];
+     for (var i = 0; i < numArray.length; i++) { 
+             var target = numArray[i];     
+             for (var l = i - 1; l >= 0 && (numArray[l] > target); l--) 
+             {         numArray[l+1] = numArray[l];
+                 }     numArray[l+1] = target; } 
+                 console.log(numArray);
