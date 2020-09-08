@@ -105,16 +105,25 @@ let user = {
     email: 'deniss@gmail.com',
     location: 'Latvia',
     blogs: ['Whe 2020 is the best year', 'Why burgers is good'],
-    login: function(){
+    login(){
         console.log('the user logged in');
     },
-    logout: function(){
+    logout(){
         console.log('The user logged out')
+    },
+    logBlogs: function(){ 
+        //Whe 2020 is the best year
+        //Why burgers is good
+        console.log(this.blogs);t
     }
 };
 
 console.log(user.login());
-console.log(user['email']);
+console.log(user.logout());
+
+//Task
+//Create Objects Car - 3 properties, 2 methods
+//Log one property and one method
 
 let cars = {
     colour: 'Red',
@@ -133,8 +142,48 @@ console.log(cars.insurance());
 
 
 
+//Math objects
+
+console.log(Math);
+console.log(Math.PI);
+
+const number = 7.8
+console.log(Math.round(number)); // celoe cislo
+console.log(Math.floor(number));
+console.log(Math.ceil(number));
+console.log(Math.trunc(number)); // delete everything after .
 
 
+//Random number
+const random = Math.random();
+console.log(random);
+console.log(Math.round(random*100));
+
+let array = [{name: 'Edgars', age: 27}, {name: 'Max', age: 27}]
+console.log(array[0].name);
+
+
+
+//Create a function that accepts array with objects and 
+//return the max possibility you get (sun of all score)
+
+let numbers =[ 
+    { tile: "N", score: 1 },
+    { tile: "K", score: 5 },
+    { tile: "Z", score: 10 },
+    { tile: "X", score: 8 },
+    { tile: "D", score: 2 },
+    { tile: "A", score: 1 },
+    { tile: "E", score: 1 },
+];
+function count(score){
+    let i,sum =0;
+    for(i = 0; i < score.length; i++){
+        sum += score[i].score;
+    }
+    console.log(sum);
+}
+console.log(count(numbers));
 
 
 
