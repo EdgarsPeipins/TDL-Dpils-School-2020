@@ -62,7 +62,12 @@ people.forEach(person => {
 
 // function sortArea(array){
 //     //var result = [89, 46, 0, 35];
-    
+//for(i = 0; i < array.length; i++){
+    // for(n = 0; i < array.lenght)
+//}
+
+
+
     
 //     for(i=0; i<array.length; i++){
     
@@ -90,3 +95,47 @@ people.forEach(person => {
                  console.log(numArray);
 
                  //add comment
+
+
+//Objects
+
+let user = {
+    name: 'Deniss',
+    age: 30,
+    email: 'deniss@gmail.com',
+    location: 'Latvia',
+    blogs: ['Whe 2020 is the best year', 'Why burgers is good'],
+    login: function(){
+        console.log('the user logged in');
+    },
+    logout: function(){
+        console.log('The user logged out')
+    }
+};
+
+console.log(user.login());
+console.log(user['email']);
+
+let cars = {
+    colour: 'Red',
+    doors: '4 doors',
+    fuel: 'Diesel',
+    insurance: function(){
+        console.log('Insurance included');
+    },
+    age: function(){
+        console.log('Car is new')
+    }
+};
+
+console.log(cars.colour);
+console.log(cars.insurance());
+
+
+
+
+
+
+
+
+
