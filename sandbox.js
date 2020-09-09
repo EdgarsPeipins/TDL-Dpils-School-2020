@@ -187,4 +187,41 @@ console.log(count(numbers));
 
 
 
+//Primitive Type vs Reference Type
+//Primitive types
+//Numbers, strings, booleans, ...
+
+//reference types
+//all types of objects, arrays, functions
+
+//primitive type
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+
+scoreOne = 100
+console.log(`scoreOne: ${scoreOne}, scoreTwo: ${scoreTwo}`);
+
+//reference type
+let userOne = {name: 'Denis', age:30};
+let userTwo = userOne;
+console.log(userOne, userTwo);
+userTwo.age = 40;
+console.log(userOne,userTwo);
+
+
+//Function toArray
+//Accepts objects
+//Returns Array
+//Object - {a: 1, b: 1}
+// returns [[ "a", 1], ["b", 2]]
+//add code to file toArrrey.js
+// push to Github
+
+let object = {a: 1, b: 1};
+function toArrow(object){
+
+}
+
+
+
 
