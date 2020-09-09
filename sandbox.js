@@ -217,11 +217,6 @@ console.log(userOne,userTwo);
 //add code to file toArrrey.js
 // push to Github
 
-let object = {a: 1, b: 1};
-function toArrow(object){
-
-}
-
 
 
 
