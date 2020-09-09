@@ -117,6 +117,7 @@
 //     console.log(buffer);
 // })
 
+// transfer info from blog 3 and write all text from blog3 to blog 4 
 const fs = require('fs');
 
 const readStream = fs.createReadStream('./docs/blog3.txt', {encoding: 'utf8'});
