@@ -118,22 +118,34 @@
 // })
 
 // transfer info from blog 3 and write all text from blog3 to blog 4 
-const fs = require('fs');
+// const fs = require('fs');
 
-const readStream = fs.createReadStream('./docs/blog3.txt', {encoding: 'utf8'});
-const writeStream = fs.createWriteStream('./docs/blog4.txt');
+// const readStream = fs.createReadStream('./docs/blog3.txt', {encoding: 'utf8'});
+// const writeStream = fs.createWriteStream('./docs/blog4.txt');
 
-readStream.on('data', (buffer) => {
-    //console.log('-----New Chunk----');
-    writeStream.write('\nNew cHUNK\n')
-    writeStream.write(buffer);
-})
+// readStream.on('data', (buffer) => {
+//     //console.log('-----New Chunk----');
+//     writeStream.write('\nNew cHUNK\n')
+//     writeStream.write(buffer);
+// })
+
+module.exports = {
+    sayhello(){
+        return 'hello';
+    },
+    addNumbers(a, b){
+        return a + b;
+    }
+}
+
+//Add another function - addNumber.
+//Accepts (calue1, value2);
+//return value1=value2
+//Write a test to check if you pass 2 and 4
+//Function returns 6
 
 
-
-
-
-
+ 
 
 
 
