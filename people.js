@@ -6,4 +6,3 @@ const ages = [ 20,35, 40];
 module.exports = {
     people:  people,
     ages: ages
-};
