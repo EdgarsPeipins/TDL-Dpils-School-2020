@@ -96,7 +96,7 @@ module.exports = {
 			client
 				.click('.shop-cart-icon a:nth-child(1)')
 				.pause(5 * 1000)
-                .saveScreenshot('cardUsing.png')
+                .takeScreenshot('cardUsing.png')
 				.getText('.price-summary__total-value', result => console.log(result.value));
 		}
 			
